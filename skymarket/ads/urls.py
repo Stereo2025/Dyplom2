@@ -5,9 +5,7 @@ from ads.views import AdViewSet, CommentViewSet
 # TODO настройка роутов для модели
 
 ad_router = SimpleRouter()
-ad_router.register(r'ads', AdViewSet)
-
-ad_router.register("ads", AdViewSet, basename="users")
+ad_router.register("ads", AdViewSet)
 
 
 urlpatterns = [
